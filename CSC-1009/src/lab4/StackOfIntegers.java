@@ -30,6 +30,9 @@ public class StackOfIntegers {
 
     public void push(int value){
         this.elements[this.elements.length-1] = value;
+
+        System.out.println(value);
+        System.out.println(this.elements[this.elements.length-1]);
     }
 
     public int pop(){
