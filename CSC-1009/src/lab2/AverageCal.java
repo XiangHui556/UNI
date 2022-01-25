@@ -1,5 +1,4 @@
 package lab2;
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class AverageCal {

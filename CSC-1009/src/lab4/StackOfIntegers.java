@@ -7,16 +7,16 @@ public class StackOfIntegers {
     private int size;
 
     public StackOfIntegers() {
-        this.size = 16;
-        this.elements = new int[this.size];
+        this.elements = new int[16];
+        this.size = -1;
     }
     public StackOfIntegers(int size) {
-        this.size = size;
-        this.elements = new int[this.size];
+        this.elements = new int[size];
+        this.size = -1;
     }
 
     public boolean empty(){
-        if(elements.length == 0){
+        if(this.size < 0){
             return true;
         }
         else{
@@ -25,28 +25,26 @@ public class StackOfIntegers {
     }
 
     public int peek(){
-        return(this.elements[this.elements.length-1]);
+        return(this.elements[this.size]);
     }
 
     public void push(int value){
-        this.elements[this.elements.length-1] = value;
-
-        System.out.println(value);
-        System.out.println(this.elements[this.elements.length-1]);
+        this.size += 1;
+        this.elements[this.size] = value;
     }
 
     public int pop(){
-        int temp = this.elements[this.elements.length-1];
-        int[] copy = new int[this.elements.length-1];
-        for (int i = 0, j = 0; i < this.elements.length; i++) {
-            if (i != this.elements.length-2) {
-                copy[j++] = this.elements[i];
-            }
+        if(this.size < 0){
+            return 0;
         }
-        return temp;
+        else{
+            int temp = this.elements[this.size];
+            this.size -= 1;
+            return temp;
+        }
     }
 
     public int getSize(){
-        return elements.length;
+        return this.size;
     }
 }
