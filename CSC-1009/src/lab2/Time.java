@@ -2,7 +2,6 @@ package lab2;
 
 import java.text.SimpleDateFormat;
 import java.util.TimeZone;
-import java.text.DateFormat;
 
 public class Time {
     public static void main(String[] args) {
