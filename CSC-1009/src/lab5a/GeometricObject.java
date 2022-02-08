@@ -1,4 +1,4 @@
-package lab5;
+package lab5a;
 
 import java.util.Date;
 

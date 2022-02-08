@@ -1,4 +1,4 @@
-package lab5a;
+package lab5b;
 
 public class Square extends Shape {
     private double dim1, dim2;

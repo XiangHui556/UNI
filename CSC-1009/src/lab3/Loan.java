@@ -10,10 +10,10 @@ public class Loan {
     private double annualInterestRate;
     private int numberofYears;
     private double loanAmount;
-    private java.util.Date loanDate;
+    final private java.util.Date loanDate;
 
     private static final DecimalFormat df = new DecimalFormat("0.00");
-    private long millis = System.currentTimeMillis();
+    final private long millis = System.currentTimeMillis();
 
     public Loan() {
         this.annualInterestRate = 2.5;

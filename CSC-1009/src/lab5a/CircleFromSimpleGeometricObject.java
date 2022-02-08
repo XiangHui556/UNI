@@ -1,4 +1,4 @@
-package lab5;
+package lab5a;
 
 public class CircleFromSimpleGeometricObject extends GeometricObject{
     private double radius;

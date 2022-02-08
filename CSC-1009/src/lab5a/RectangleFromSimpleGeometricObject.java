@@ -1,4 +1,4 @@
-package lab5;
+package lab5a;
 
 public class RectangleFromSimpleGeometricObject extends GeometricObject{
     private double width;

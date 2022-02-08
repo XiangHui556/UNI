@@ -3,15 +3,18 @@ package lab4;
 import java.lang.Math;
 import java.util.Scanner;
 
+
 public class BMI {
     private int weight;
     private int height;
     private double BMIValue;
+    final double weightconv = 0.45359237;
+    final double heightconv = 0.0254;
 
     public BMI(int weight, int height) {
         this.weight = weight;
         this.height = height;
-        this.BMIValue = ((this.weight*0.45359237) / Math.pow((this.height*0.0254),2));
+        this.BMIValue = ((this.weight*weightconv) / Math.pow((this.height*heightconv),2));
     }
 
     public int getWeight() {
