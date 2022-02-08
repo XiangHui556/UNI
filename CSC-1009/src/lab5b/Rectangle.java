@@ -1,4 +1,4 @@
-package lab5a;
+package lab5b;
 
 public class Rectangle extends Shape {
     private double dim1, dim2;
