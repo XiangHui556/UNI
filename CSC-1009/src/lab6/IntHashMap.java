@@ -67,7 +67,7 @@ public class IntHashMap {
         map.put(11, 11);
         map.put(9, 9);
         addAndSort(map, 8);
-
+        System.out.println("");
         genRandom(map2, 500);
 
         int index = -1;

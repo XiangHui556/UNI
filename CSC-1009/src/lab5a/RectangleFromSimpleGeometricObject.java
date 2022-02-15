@@ -16,6 +16,8 @@ public class RectangleFromSimpleGeometricObject extends GeometricObject{
     public RectangleFromSimpleGeometricObject(double width, double height, String color, boolean filled) {
         this.width = width;
         this.height = height;
+        this.setColor(color);
+        this.setFilled(filled);
     }
 
     public double getWidth() {
