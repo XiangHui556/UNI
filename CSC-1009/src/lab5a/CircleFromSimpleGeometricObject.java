@@ -13,6 +13,8 @@ public class CircleFromSimpleGeometricObject extends GeometricObject{
 
     public CircleFromSimpleGeometricObject(double radius, String color, boolean filled) {
         this.radius = radius;
+        this.setColor(color);
+        this.setFilled(filled);
     }
 
     public double getRadius() {
