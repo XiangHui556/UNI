@@ -1,6 +1,8 @@
 package lab9;
 import java.util.Random;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 public class RandomCharacter {
     static final String CharacterSets = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@/!?";
     Random random = new Random();
@@ -37,5 +39,12 @@ public class RandomCharacter {
             output += randomChar;
         }
         return output;
+    }
+    public static void main(String[] args){
+        RandomCharacter random = new RandomCharacter();
+        System.out.println(random.getRandomLowerCaseLetter(15));
+        System.out.println(random.getRandomUpperCaseLetter(15));
+        System.out.println(random.getRandomDigitCharacter(15));
+        System.out.println(random.getRandomCharacter(15));
     }
 }
