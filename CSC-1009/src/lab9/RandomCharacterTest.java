@@ -1,4 +1,5 @@
 package lab9;
+import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.*;
@@ -15,33 +16,38 @@ public class RandomCharacterTest {
     }
 
     @Test
-    @DisplayName("Simple 10 Int should work")
-    void testWithInt10() {
-        assertNotNull(random.getRandomLowerCaseLetter(10), "Regular int of 10 should work");
-        assertNotNull(random.getRandomUpperCaseLetter(10), "Regular int of 10 should work");
-        assertNotNull(random.getRandomDigitCharacter(10), "Regular int of 10 should work");
-        assertNotNull(random.getRandomCharacter(Integer.parseInt("10")), "parseInt of 10 should work");
+    @DisplayName("Simple Check if random char is within range")
+    void testOnce() {
+        int upperLetter = (int) random.getRandomUpperCaseLetter();
+        int lowerLetter = (int) random.getRandomLowerCaseLetter();
+        int charLetter = (int) random.getRandomCharacter();
+        int num = random.getRandomDigitCharacter();
+        int upperCaseAAsciiCode = 65;
+        int upperCaseZAsciiCode = 90;
+        int lowerCaseAAsciiCode = 97;
+        int lowerCaseZAsciiCode = 122;
+        Assertions.assertTrue(upperLetter >= upperCaseAAsciiCode && upperLetter <= upperCaseZAsciiCode, "Fail");
+        Assertions.assertTrue(lowerLetter >= lowerCaseAAsciiCode && lowerLetter <= lowerCaseZAsciiCode, "Fail");
+        Assertions.assertTrue(charLetter >= 0 && charLetter <= 127, "Fail");
+        Assertions.assertTrue(num >= 0 && num <= 9, "Fail");
+        Assertions.assertTrue(num == 1 || num == 2 || num == 3 || num == 5 || num == 7, "Not Prime " + num);
     }
 
     @Test
-    @DisplayName("Simple Combination")
-    void testAllMethodCombine() {
-        assertNotNull((random.getRandomCharacter(5) + random.getRandomDigitCharacter(5) + random.getRandomLowerCaseLetter(5) + random.getRandomUpperCaseLetter(5)), "Combine should work");
-    }
-
-    @Test
-    @DisplayName("Wrong Parameter")
-    void testStringParameter() {
-        try{/*
-            assertNotNull(random.getRandomLowerCaseLetter("10"), "Should Give Error");
-            assertNotNull(random.getRandomUpperCaseLetter("10"), "Should Give Error");
-            assertNotNull(random.getRandomDigitCharacter("10"), "Should Give Error");
-            assertNotNull(random.getRandomCharacter("10"), "Should Give Error");*/
-            //Complier don't allow
-        }
-        catch (AssertionError e){
-            System.out.println(e.getMessage());
-        }
+    @DisplayName("Test 10 times ")
+    void test10Times() {
+        int upperLetter = (int) random.getRandomUpperCaseLetter();
+        int lowerLetter = (int) random.getRandomLowerCaseLetter();
+        int charLetter = (int) random.getRandomCharacter();
+        int num = random.getRandomDigitCharacter();
+        int upperCaseAAsciiCode = 65;
+        int upperCaseZAsciiCode = 90;
+        int lowerCaseAAsciiCode = 97;
+        int lowerCaseZAsciiCode = 122;
+        Assertions.assertTrue(upperLetter >= upperCaseAAsciiCode && upperLetter <= upperCaseZAsciiCode, "Fail");
+        Assertions.assertTrue(lowerLetter >= lowerCaseAAsciiCode && lowerLetter <= lowerCaseZAsciiCode, "Fail");
+        Assertions.assertTrue(charLetter >= 0 && charLetter <= 127, "Fail");
+        Assertions.assertTrue(num >= 0 && num <= 9, "Fail");
     }
 
 }

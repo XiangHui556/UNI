@@ -7,44 +7,39 @@ public class RandomCharacter {
     static final String CharacterSets = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@/!?";
     Random random = new Random();
 
-    public String getRandomLowerCaseLetter(int amount){
-        String output = "";
-        for(int i = 0; i < amount; i++){
-            char randomCharacter = (char) (random.nextInt(26) + 'a');
-            output += randomCharacter;
-        }
-        return output;
+    public char getRandomLowerCaseLetter(){
+        char randomCharacter = (char) (random.nextInt(26) + 'a');
+        return randomCharacter;
     }
-    public String getRandomUpperCaseLetter(int amount){
-        String output = "";
-        for(int i = 0; i < amount; i++){
-            char randomCharacter = (char) (random.nextInt(26) + 'A');
-            output += randomCharacter;
-        }
-        return output;
+    public char getRandomUpperCaseLetter(){
+        char randomCharacter = (char) (random.nextInt(26) + 'A');
+        return randomCharacter;
     }
-    public String getRandomDigitCharacter(int amount){
-        String output = "";
-        for(int i = 0; i < amount; i++){
-            int randomInt = random.nextInt(10);
-            output += randomInt;
-        }
-        return output;
+    public int getRandomDigitCharacter(){
+        int randomInt = random.nextInt(10);
+        return randomInt;
     }
-    public String getRandomCharacter(int amount){
-        String output = "";
-        for(int i = 0; i < amount; i++){
-            int randomInt = random.nextInt(CharacterSets.length());
-            char randomChar = CharacterSets.charAt(randomInt);
-            output += randomChar;
-        }
-        return output;
+    public char getRandomCharacter(){
+        int randomInt = random.nextInt(CharacterSets.length());
+        char randomChar = CharacterSets.charAt(randomInt);
+        return randomChar;
     }
     public static void main(String[] args){
         RandomCharacter random = new RandomCharacter();
-        System.out.println(random.getRandomLowerCaseLetter(15));
-        System.out.println(random.getRandomUpperCaseLetter(15));
-        System.out.println(random.getRandomDigitCharacter(15));
-        System.out.println(random.getRandomCharacter(15));
+        for(int i = 0; i < 15; i++){
+            System.out.print(random.getRandomLowerCaseLetter());
+        }
+        System.out.println();
+        for(int i = 0; i < 15; i++){
+            System.out.print(random.getRandomUpperCaseLetter());
+        }
+        System.out.println();
+        for(int i = 0; i < 15; i++){
+            System.out.print(random.getRandomDigitCharacter());
+        }
+        System.out.println();
+        for(int i = 0; i < 15; i++){
+            System.out.print(random.getRandomCharacter());
+        }
     }
 }
