@@ -1,0 +1,47 @@
+S-100000001,24/3/2022 8:12,Account Creation,-,,,0
+B-100000001,24/3/2022 8:13,Account Creation,-,,,0
+S-100000001,24/3/2022 8:13,Deposit of 1000000.0 SGD,from POSB bank,,1000000,1000000
+S-100000002,24/3/2022 8:13,Account Creation,-,,,0
+S-100000001,24/3/2022 8:14,Withdrawal of 100.0 SGD,took money from PTSD,100,,999900
+B-100000001,24/3/2022 8:14,Deposit of 0.01 USD,im rich,,0.01,0.01
+S-100000002,24/3/2022 8:14,Deposit of 3500000.0 JPY,hi my name is sean,,3500000,3500000
+B-100000001,24/3/2022 8:15,Transfer To sean ow,you are rich,0.01,,0
+S-100000002,24/3/2022 8:15,Transfer From Very Human Name,you are rich,,1.215853043,3500001.216
+S-100000001,24/3/2022 8:15,Transfer To sean ow,for the poor,3000,,996900
+S-100000002,24/3/2022 8:15,Transfer From MDBA,for the poor,,268662.6663,3768663.882
+S-100000002,24/3/2022 8:16,Transfer To MDBA,hello,1,,3768662.882
+S-100000001,24/3/2022 8:16,Transfer From sean ow,hello,,0.011166,996900.0112
+B-100000001,24/3/2022 8:17,Deposit of 0.01 USD,wow rich,,0.01,0.01
+B-100000001,24/3/2022 8:18,Transfer To MDBA,rich malay,0.01,,0
+S-100000001,24/3/2022 8:18,Transfer From Very Human Name,rich malay,,0.01357688,996900.0247
+S-100000003,24/3/2022 8:21,Account Creation,-,,,0
+S-100000004,24/3/2022 8:21,Account Creation,-,,,0
+S-100000003,24/3/2022 8:22,Deposit of 5.6784678346784365E17 HKD,no,,5.68E+17,5.68E+17
+S-100000003,24/3/2022 8:23,Transfer To MDBA,your,570000,,5.68E+17
+S-100000001,24/3/2022 8:23,Transfer From Riko Sakurauchi,your,,98909.82226,1095809.847
+C-100000001,24/3/2022 8:29,Account Creation,-,,,0
+C-100000001,24/3/2022 8:30,Deposit of 5000.0 SGD,Robbing,,5000,5000
+C-100000001,24/3/2022 8:30,Withdrawal of 10.0 SGD,-,10,,4990
+C-100000001,24/3/2022 8:30,Withdrawal of 12.0 SGD,Cut Hair,12,,4978
+C-100000001,24/3/2022 8:31,Deposit of 500.0 SGD,Birthday Money,,500,5478
+C-100000001,24/3/2022 8:31,Withdrawal of 2248.0 SGD,New Laptop,2248,,3230
+S-100000003,24/3/2022 8:32,Transfer To Zhang XiangHui,1,1,,5.68E+17
+C-100000001,24/3/2022 8:32,Transfer From Riko Sakurauchi,1,,0.173554003,3230.173554
+S-100000003,24/3/2022 8:34,Transfer To Zhang XiangHui,please buy me a nesoberi,1,,5.68E+17
+C-100000001,24/3/2022 8:34,Transfer From Riko Sakurauchi,please buy me a nesoberi,,0.173549995,3230.347104
+C-100000001,24/3/2022 8:35,Transfer To Riko Sakurauchi,Dinner is on me,50,,3180.347104
+S-100000003,24/3/2022 8:35,Transfer From Zhang XiangHui,Dinner is on me,,288.1182432,5.68E+17
+S-100000003,24/3/2022 8:35,Transfer To Zhang XiangHui,please buy me a nesoberi,500,,5.68E+17
+C-100000001,24/3/2022 8:35,Transfer From Riko Sakurauchi,please buy me a nesoberi,,86.76999807,3267.117102
+S-100000003,24/3/2022 8:38,Transfer To Zhang XiangHui,please buy me a nesoberi,570000,,5.68E+17
+C-100000001,24/3/2022 8:38,Transfer From Riko Sakurauchi,please buy me a nesoberi please buy me a nesoberi,,98923.49705,102190.6142
+S-100000003,24/03/2022 08:41:36,Deposit of 6.4389574385347854E22 HKD,please buy me a nesoberi,,6.4389574385347854E22,6.439014223213132E22
+S-100000003,24/03/2022 08:46:58,Withdrawal of 6.0E17 HKD,Chair,6.0E17,,6.438954223213133E22
+S-100000003,24/03/2022 08:47:36,Withdrawal of 6.0E22 HKD,Yacht,6.0E22,,4.389542232131327E21
+S-100000003,24/03/2022 08:48:11,Withdrawal of 4.0E21 HKD,Mansion,4.0E21,,3.89542232131327E20
+C-100000001,24/03/2022 08:49:05,Deposit of 5.0E8 SGD,Bank Heist Cut,,5.0E8,5.001021906141531E8
+C-100000001,24/03/2022 08:51:53,Deposit of 1.0 SGD,-,,1.0,5.001021916141531E8
+C-100000002,24/03/2022 09:05:43,Deposit of 1.69 SGD,nesoberi,,1.69,1.69
+C-100000002,24/03/2022 09:06:17,Deposit of 696969.0 SGD,nesoberi,,696969.0,696970.69
+C-100000002,24/03/2022 09:06:48,Transfer To Riko Sakurauchi,buy a nesoberi,65.0,,696905.69
+S-100000003,24/03/2022 09:06:48,Transfer From Riko Sakurauchi,buy a nesoberi,,374.46423530578613,3.89542232131327E20
